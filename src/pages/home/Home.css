@@ -1,0 +1,69 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 720px;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ecommImage {
+  height: 400px;
+  width: 100%;
+  /* object-fit: cover; */
+  /* border: 2px solid white; */
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+  margin-bottom: -50px;
+}
+
+.productContainer {
+  display: grid;
+  width: 90vw;
+  height: 1240px;
+  min-width: 720px;
+  background-color: transparent;
+  /* grid-template-rows: 400px 400px 400px; */
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-template-columns: 29vw 14.5vw 14.5vw 29vw;
+  column-gap: 1vw;
+  row-gap: 20px;
+  z-index: 1;
+}
+
+.one {
+  background-color: white;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  grid-column: span 2;
+}
+.two {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  grid-column: span 2;
+}
+.three {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.four {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  grid-column: span 2;
+}
+.five {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.six {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  grid-area: 3/1/4/5;
+}

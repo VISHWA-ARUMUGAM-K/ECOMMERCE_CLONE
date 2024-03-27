@@ -1,0 +1,47 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.subtotalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+
+  padding: 25px;
+  border: 1px solid black;
+}
+
+.subtotalContainer > p {
+  font-size: 20px;
+}
+
+.giftSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  margin-top: 5px;
+
+  font-size: 20px;
+}
+
+.proceedButton {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: rgb(241, 179, 62);
+  font-size: 18px;
+
+  border: 1px solid black;
+
+  cursor: pointer;
+}

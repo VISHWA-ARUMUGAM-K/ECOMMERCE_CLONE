@@ -1,0 +1,34 @@
+.checkoutContainer {
+  display: flex;
+  height: calc(100vh - 80px);
+  width: 100%;
+  padding: 20px;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border: 1px solid black;
+}
+
+.rightContainer {
+  width: 30%;
+  border: 1px solid black;
+}
+
+.adContainer > img {
+  width: 100%;
+  height: 100%;
+}
+
+.basketContainer > h1 {
+  padding: 20px;
+}
+
+.basketContainer {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 20px;
+}
