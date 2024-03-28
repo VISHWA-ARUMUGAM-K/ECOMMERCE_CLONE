@@ -1,7 +1,7 @@
 import { Outlet, Navigate } from "react-router-dom";
 import React from "react";
 import Header from "../../components/home/header/Header";
-import { DataProvider } from "../../StateProvider";
+import { DataProvider } from "../../data/dataContext";
 
 const Layout = () => {
   const token = localStorage.getItem("ecomm_token");

@@ -3,8 +3,7 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Header.css";
 import { useContext } from "react";
-import DataContext from "../../../StateProvider";
-// import DataContext from "./data/dataContext";
+import DataContext from "../../../data/dataContext";
 import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../../../config/Firebase";
@@ -37,19 +36,13 @@ const Header = () => {
       </div>
       <div className="signUpProfileSection">
         <div className="navItem">
-          <span className="NavItemFirstLine">
-            Hello {user ? user.email.split("@")[0] : "guest"}
-          </span>
+          <span className="NavItemFirstLine">Hello {user ? user.email.split("@")[0] : "guest"}</span>
           {!user ? (
             <Link to="/signin" style={{ textDecoration: "none" }}>
               <span className="NavItemSecondLine">Sign In</span>
             </Link>
           ) : (
-            <span
-              className="NavItemSecondLine"
-              onClick={handleLogout}
-              style={{ cursor: "pointer" }}
-            >
+            <span className="NavItemSecondLine" onClick={handleLogout} style={{ cursor: "pointer" }}>
               Sign Out
             </span>
           )}

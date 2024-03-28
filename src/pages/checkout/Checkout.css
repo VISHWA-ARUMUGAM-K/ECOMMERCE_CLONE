@@ -9,12 +9,10 @@
   display: flex;
   flex-direction: column;
   width: 70%;
-  border: 1px solid black;
 }
 
 .rightContainer {
   width: 30%;
-  border: 1px solid black;
 }
 
 .adContainer > img {
